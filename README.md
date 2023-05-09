@@ -10,10 +10,11 @@ Unet model is used as segmentation technique , our model is little bit different
 <br>
 
 ## Model 
- We built Unet Model which divided into two main steps 
+ We built Unet Model which divided into two main steps <br>
+ We needed to do some bilinear interpolation because our images were small sizes , so we were able to improve results.<br>
  - Down Sampling
  - Up Sampling
- We needed to do some bilinear interpolation because our images were small sizes , so we were able to improve results.
+
 ## Results
 <br>
 
