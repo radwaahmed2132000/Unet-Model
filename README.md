@@ -1,5 +1,5 @@
-#  U-net Model
-Unet model is used as segmentation technique , our model is little bit different about normal architecture
+#  U-Net Model
+U-Net model is used as segmentation technique, our model is little bit different about normal architecture
 >This serves as the assignment for the SatelliteImagery course taught to senior students in CUFE for 2023.
 
 ## Technologies 📚
@@ -10,27 +10,34 @@ Unet model is used as segmentation technique , our model is little bit different
 <br>
 
 ## Model 
- We built Unet Model which divided into two main steps <br>
- We needed to do some bilinear interpolation because our images were small sizes , so we were able to improve results.<br>
- - Down Sampling
- - Up Sampling
+ We built Unet Model which is divided into two main steps: <br>
+ - Encoding
+    - 3x3 Double Convolution
+    - 2x2 Down Sampling (Max Pooling)
+ - Decoding
+    - 3x3 Double Convolution
+    - 2x2 Up Sampling (Up Convolution)
+    - 1x1 Convolution (Last layer only with the number of classes as the depth)
+
+ We needed to do nearest neighbor interpolation because our images had small sizes (192*192). By doing so, we were able to improve the results and losses.<br>
 
 ## Results
 <br>
 
 
-<img src="https://github.com/radwaahmed2132000/U-net-Model/blob/main/results.PNG" >
+<img src="https://github.com/radwaahmed2132000/U-net-Model/blob/main/results.jpeg" >
 
 
 <br>
 
 ### Resource & References 
-Kaggle , Papers for Unet architecture 
+U-Net's Official Research Paper:
+https://doi.org/10.48550/arXiv.1505.04597
 
 
 ## Collaborators
 
-<div  align='center'>
+<div align='center'>
 
 <!-- readme: collaborators -start -->
 
